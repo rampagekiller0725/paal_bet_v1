@@ -1,0 +1,15 @@
+.j-dropdown {
+  position: relative;
+  z-index: 50;
+  
+  .j-dropdown-header {
+    position: static;
+  }
+
+  .j-dropdown-body {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: green;
+  }
+}

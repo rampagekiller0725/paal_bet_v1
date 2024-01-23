@@ -1,0 +1,1073 @@
+// MainPage
+.main-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading-text {
+    font-size: 2rem;
+    font-weight: bold;
+    transform: translate(0, -3rem);
+  }
+}
+
+// BetAmountInput
+.bet-amount-input {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 3px;
+  width: 100%;
+  
+  .input-part {
+    padding: .1rem .1rem 0 .1rem;
+    position: relative;
+
+    input {
+      width: 100%;
+      font-size: 1rem;
+      background-color: black;
+      padding: .7rem;
+      padding-right: 5rem;
+      font-size: 1.5rem;
+      outline: none;
+    }
+
+    .suffix {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 18px;
+    }
+  }
+
+
+  .selector {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// TokenSelect
+.token-select {
+  position: relative;
+
+  .token-select-title {
+    font-size: 1.2rem;
+  }
+
+  .token-select-content {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+}
+
+// SelectorButton
+.selector-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .dollor-sign {
+    color: rgba($color: white, $alpha: .3);
+  }
+
+  .value-box {
+    color: white;
+  }
+}
+
+// PlaceButton
+.place-button {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: darkorange;
+  color: white;
+  border-radius: 2px;
+}
+
+// PossibleProfilt
+.possible-profit {
+  display: flex;
+  justify-content: space-between;
+
+  span:last-child {
+    color: greenyellow;
+  }
+}
+
+// ServiceFee
+.service-fee {
+  display: flex;
+  justify-content: space-between;
+}
+
+// BetslipPage
+.betslip-page {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .5rem;
+  position: relative;
+
+  .bet-type-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label span {
+      margin-right: 0;
+    }
+
+    .bet-type-label {
+      width: 100%;
+      color: white;
+      padding: .5rem 0;
+    }
+
+    .bet-type-label:first-child {
+      padding-right: 1rem;
+      text-align: right;
+    }
+
+    .bet-type-label:last-child {
+      padding-left: 1rem;
+    }
+  }
+
+  >.balance-box {
+    display: flex;
+    justify-content: space-between;
+
+    >.right-box {
+      display: flex;
+      gap: .5rem;
+
+      >.currency {
+        color: rgba($color: white, $alpha: 0.5);
+      }
+    }
+
+  }
+
+  .bet-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .bet-pay-pair {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+}
+
+// WalletSelect
+.wallet-select {
+  display: flex;
+  gap: 1rem;
+  padding: .5rem;
+  align-items: center;
+  background-color: darkcyan;
+
+  .wallet-image {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .wallet-title {
+    font-size: 1rem;
+  }
+}
+
+// ConnectWalletPage
+.connect-wallet-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  >.top-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    align-items: flex-end;
+
+    >.title {
+      font-size: 1rem;
+    }
+  }
+
+  >.content-box {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0 .5rem;
+  }
+
+}
+
+div[tabindex='-1'] > div:last-child {
+  align-items: center;
+}
+
+// TabBox
+.tab-box {
+  display: flex;
+  flex-direction: column;
+  
+  >.top-part {
+    display: flex;
+  }
+}
+
+// TabButton
+.tab-button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba($color: #ddd, $alpha: 0.1);
+  width: 100%;
+
+  &.MuiBadge-badge {
+    right: 2px;
+    top: 1px;
+
+    @media (min-width: 357px) {
+      right: 0;
+    }
+  }
+}
+
+
+// MybetsPage
+.mybets-page {
+  // .tab-content {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: .5rem;
+  //   padding: .5rem;
+  // };
+
+  color: white;
+}
+
+.mybets-loading-page {
+  width: 100vw;
+  height: calc(100vh - 9rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// FilterGroup
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+// InfoGroup
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: left;
+
+  >.title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  >.content {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 3.5rem;
+        min-height: 2.5rem;
+        border-radius: 50%;
+        color: white;
+        border: 2px solid green;
+      }
+      
+      .player-info {
+        font-size: .8rem;
+        // padding: 0 3px;
+      }
+    }
+  }
+}
+
+// MarketCard
+.market-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba($color: rgb(10, 124, 10), $alpha: 0.6);
+  border-radius: .5rem;
+  padding: .5rem;
+  gap: .5rem;
+
+  >.top-box {
+    display: flex;
+    justify-content: space-between;
+
+    >.date-box {
+      font-size: 1rem;
+    }
+
+    .league-name {
+      font-size: 1rem;
+    }
+  }
+
+  >.team-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    >.team-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 35%;
+
+      >.team-name {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      >.team-img {
+        width: 3.5rem;
+        height: 3.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: rgba($color: white, $alpha: .56);
+      }
+
+      &:first-child {
+        align-items: flex-start;
+      }
+
+      &:last-child {
+        align-items: flex-end;
+        text-align: right;
+      }
+
+      @media (min-width: 768px) {
+        &:first-child {
+          flex-direction: row;
+        }
+        &:last-child {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+
+    >.vs-img {
+      width: 3rem;
+      object-fit: cover;
+      opacity: 0.8;
+      margin-top: 2rem;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  >.odds-box {
+    display: flex;
+    gap: .5rem;
+  }
+}
+
+
+// ScheduledPage
+.scheduled-page {
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+
+    .sports-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 550px) {
+      // flex-direction: column;
+      // gap: 1rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+  }
+
+}
+
+.scheduled-loading-page {
+  width: 100vw;
+  height: calc(100vh - 19rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MainLayout
+.main-layout {
+  .footer-content {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
+// BetslipButton
+.betslip-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba($color: white, $alpha: 0.5);
+  min-width: 60px;
+
+  >.icon {
+    font-size: 1.5rem;
+  }
+
+  >.title {
+    font-size: 0.6rem;
+  }
+
+  &:hover {
+    color: rgba($color: white, $alpha: 0.8);
+  }
+
+  &:hover {
+    color: rgba($color: white, $alpha: 0.8);
+  }
+}
+
+// Footer
+.footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba($color: green, $alpha: 0.8);
+}
+
+// FooterButton
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba($color: white, $alpha: 0.5);
+  min-width: 60px;
+
+  >.icon {
+    font-size: 1.5rem;
+  }
+
+  >.title {
+    font-size: 0.6rem;
+  }
+
+  &:hover {
+    color: rgba($color: white, $alpha: 0.8);
+  }
+}
+
+// Header
+.header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  padding: 0 .5rem;
+  border-bottom: thin solid rgba($color: white, $alpha: .8);
+  background-color: black;
+
+  @media (min-width: 375px) {
+    padding: 0 1rem;
+  }
+
+  .menu-box {
+    display: flex;
+    gap: .5rem;
+    transition: all 1s ease-in;
+
+    >.title {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  >.right-part {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    >.logo {
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    @media (min-width: 375px) {
+      gap: 1rem;
+    }
+  }
+}
+
+// WalletBox
+.header .balance-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: .1rem .3rem;
+  border: 2px solid greenyellow;
+  border-radius: 15px;
+  position: relative;
+
+  .balance-image {
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .chain-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  @media (min-width: 375px) {
+    padding: .2rem .5rem;
+
+    .chain-name {
+      font-size: 1rem;
+    }
+  }
+}
+
+.disconnect-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: black, $alpha: 0.8);
+  
+
+  .disconnect-button {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba($color: white, $alpha: 0.8);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: black;
+  }
+}
+
+.wallet-box {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background-color: rgba($color: lightgreen, $alpha: 0.2);
+  border: 1px solid #ffffff22;
+  border-radius: 3px;
+}
+
+// SportsMenu
+.sport-menu {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all .2s ease-out;
+  background-color: rgba($color: black, $alpha: 0.95);
+
+  .sport-menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 1rem;
+    gap: 2rem;
+
+    .network-select {
+      color: black;
+      align-items: center;
+
+      .min-h-unit-14 {
+        min-height: auto;
+        height: auto;
+      }
+
+      button {
+        background-color: #555;
+        * {
+          color: white;
+        }
+      }
+    }
+  }
+
+  >.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  >.loading-box {
+    width: 100%;
+    height: calc(100vh - 25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  >.content {
+    width: 100%;
+    min-height: calc(100vh - 9rem);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    * {
+      color: #eee;
+    }
+  }
+
+  @media (min-width: 425px) {
+    width: 425px;
+  }
+}
+
+li span {
+  color: black;
+}
+
+// BackButton
+.back-button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #333, $alpha: 0.5);
+}
+
+// InfoBox
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-color: rgba($color: #333, $alpha: 0.8);
+
+  .field-text {
+    font-size: 1rem;
+  }
+
+  .value-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .info-box {
+    .field-text {
+      font-size: 0.8rem;
+    }
+
+    .value-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// MoreButton
+.more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #333, $alpha: 0.8);
+  padding: .5rem;
+  border-radius: 0.5rem;
+}
+
+// NoBets
+.no-bets {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 2rem;
+    font-weight: bold;
+    transform: translate(0, -3rem);
+  }
+}
+
+// FilterBox
+.filter-box {
+  position: relative;
+
+  .filter-box-title {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1rem;
+    border-radius: 13px;
+    padding: 0 .5rem;
+    min-width: 4rem;
+    cursor: pointer;
+  }
+
+  .filter-box-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba($color: #555, $alpha: 1.0);
+    top: 2rem;
+    border-radius: .5rem;
+    transition: all 1s ease-in;
+    z-index: 10;
+    min-width: max-content;
+  }
+}
+
+// FilterBoxItem
+.filter-box-item {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  padding: .5rem;
+  cursor: pointer;
+
+  >.image {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  >.title {
+    font-size: 1rem;
+  }
+}
+
+// BetCard
+.bet-card {
+  display: flex;
+  flex-direction: column;
+  background-color: darkolivegreen;
+  padding: .5rem;
+  border-radius: .3rem;
+  width: 100%;
+
+  .date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .date {
+      font-size: 1rem;
+    }
+  }
+
+  .bet-team {
+    font-size: 1rem;
+  }
+
+  .bet-info {
+    display: flex;
+    justify-content: space-between;
+
+    .info-box-left {
+      display: flex;
+      gap: .5rem;
+    }
+
+    .odds {
+      font-size: 1rem;
+    }
+  }
+}
+
+// RemoveButton
+.remove-button {
+  font-size: 1rem;
+  padding: .2rem;
+  padding-right: .5rem;
+}
+
+
+
+// OpenBetCard
+.open-single-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: .5rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+
+  .date-box {
+    display: flex;
+    justify-content: space;
+    align-items: center;
+
+    .date {
+      font-size: 1rem;
+    }
+  }
+
+  .bet-team {
+    font-size: 1rem;
+  }
+
+  .bet-info {
+    display: flex;
+    justify-content: space-between;
+
+    .info-box-left {
+      display: flex;
+      gap: .5rem;
+    }
+
+    .odds {
+      font-size: 1rem;
+    }
+  }
+}
+
+// OpenBetCard
+.open-parlay-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: .5rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+
+  .date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-box {
+      .date {
+        display: inline-block;
+        min-width: 10rem;
+        font-size: 1rem;
+      }
+  
+      .result {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .bet-box {
+    display: flex;
+    flex-direction: column;
+
+    .bet-box-item {
+      border-top: 1px dotted rgba($color: gray, $alpha: .5);
+      
+      .bet-team {
+        font-size: 1rem;
+      }
+
+      .info-box-left {
+        display: flex;
+        gap: .5rem;
+      }
+    
+      .odds {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// ClosedSingleCard
+.closed-single-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: .5rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+
+  .date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-box {
+      .date {
+        display: inline-block;
+        min-width: 10rem;
+        font-size: 1rem;
+      }
+  
+      .result {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .bet-team {
+    font-size: 1rem;
+  }
+
+  .bet-info {
+    display: flex;
+    justify-content: space-between;
+
+    .info-box-left {
+      display: flex;
+      gap: .5rem;
+    }
+
+    .odds {
+      font-size: 1rem;
+    }
+  }
+}
+
+.claim-button {
+  font-size: 1rem;
+  color: greenyellow;
+  padding: 0 .5rem;
+  border: 1px solid lightcoral;
+  border-radius: .5rem;
+}
+
+// ClosedParlayCard
+.closed-parlay-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: .5rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+
+  .date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-box {
+      .date {
+        display: inline-block;
+        min-width: 10rem;
+        font-size: 1rem;
+      }
+  
+      .result {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .bet-box {
+    display: flex;
+    flex-direction: column;
+
+    .bet-box-item {
+      border-top: 1px dotted rgba($color: gray, $alpha: .5);
+      
+      .bet-team {
+        font-size: 1rem;
+      }
+
+      .info-box-left {
+        display: flex;
+        gap: .5rem;
+      }
+    
+      .odds {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.position-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.position-box.loading-box {
+  width: 100%;
+  height: calc(100vh - 15rem);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
